@@ -17,6 +17,7 @@ if(Meteor.isServer){
                     var Xray = Meteor.npmRequire('x-ray'),
                         x = Xray();
                     x(r.body,{list : x('li.download-link-list:not(".listFirstLink")',[{
+                        format : '.download-link-format',
                         quality : '.download-link-quality',
                         source : '.download-link-download a@href'
                     }])})
@@ -29,7 +30,7 @@ if(Meteor.isServer){
                     console.log(rs.error);
                 }
                 if(rs.result && rs.result.list){
-                    return _.filter(rs.result.list, function(s){ return (s.source.indexOf('mp4') > -1)})
+                    return _.filter(rs.result.list, function(s){ return (s.format.toUpperCase() === 'MP4')})
                 };
                 return false;
             }catch(ex){
