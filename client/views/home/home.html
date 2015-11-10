@@ -1,0 +1,16 @@
+<template name="home">
+<div class="row">
+    <div class="large-12">
+        <div class="row collapse">
+            <div class="small-10 columns">
+                <input type="text" placeholder="Url video" data-bind="value : videoUrl">
+            </div>
+            <div class="small-2 columns">
+                <button data-bind="enabled : isValidUrl,click: getVideo" class="button postfix">Get</button>
+            </div>
+        </div>
+        <br/>
+        <div id="player"></div>
+    </div>
+</div>
+</template>
