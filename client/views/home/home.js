@@ -8,7 +8,8 @@ Template.home.viewmodel({
         var self = this;
         if ((is.not.empty(_videoUrl) && is.url(_videoUrl))) {
             Meteor.call('_9xbuddy_getMp4', _videoUrl, function (e, r) {
-                console.log(r);
+                var s = _.last(r);
+                var player = new Clappr.Player({source: s.source, parentId: "#player"});
                 self.videoUrl('');
             })
         }
