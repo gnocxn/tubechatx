@@ -1,8 +1,14 @@
 <template name="defaultLayout">
-    <div class="row">
-        <div class="large-12">
-            {{>Template.dynamic template=top}}
+    <div class="app">
+        <div class="row fullwidth">
+            <div class="large-12">
+                {{>Template.dynamic template=top}}
+            </div>
+        </div>
+        <div class="row fullwidth">
+            <div class="large-12 columns">
+                {{>Template.dynamic template=main}}
+            </div>
         </div>
     </div>
-    {{>Template.dynamic template=main}}
 </template>

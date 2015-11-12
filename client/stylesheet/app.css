@@ -1,0 +1,85 @@
+.app {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-col {
+    height: 100%;
+}
+
+.fullwidth {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+
+.video-js {
+    width: 100%!important;
+    height: 360px!important;
+    text-shadow: .8px .8px #fff
+}
+
+.video-js:after {
+    content: '.';
+    display: block;
+    position: relative;
+    visibility: hidden;
+    margin: 0 0 0 -100%;
+    padding: 40.1% 0 0;
+}
+
+.vjs-default-skin {
+    color: #000
+}
+
+.vjs-default-skin .vjs-play-progress,
+.vjs-default-skin .vjs-volume-level {
+    background-color: #4f4f4f
+}
+
+.vjs-default-skin .vjs-big-play-button,
+.vjs-default-skin .vjs-control-bar {
+    background: rgba(255, 255, 255, 1)
+}
+
+.vjs-default-skin .vjs-slider {
+    background: rgba(255, 255, 255, .3333333333333333)
+}
+.vjs-default-skin .vjs-control-bar {
+    font-size: 80%
+
+}
+
+.vjs-big-play-button {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.video-js-responsive-container {
+    width: 99.9%;
+    box-shadow: 0 0 80px 20px rgba(255, 255, 255, .2333333333333333);
+    /*margin: 0 auto*/
+}
+
+#_chatContainer{
+    height: 360px !important;
+}
+
+#_chatContainer .chatHeader{
+    height: 23px !important;
+}
+
+#_chatContainer .chatMessages{
+    height: 300px !important;
+    background-color: #eeeeee;
+}
+
+#_chatContainer .chatInput{
+    height: 37px !important;
+}

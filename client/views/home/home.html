@@ -1,19 +1,26 @@
 <template name="home">
-<div class="row">
-    <div class="large-12">
-        <div class="row collapse">
-            <div class="small-10 columns">
-                <input type="text" placeholder="Url video" data-bind="value : videoUrl">
-            </div>
-            <div class="small-2 columns">
-                <button data-bind="enabled : isValidUrl,click: getVideo" class="button postfix">Get</button>
-            </div>
-        </div>
+<div class="row collapse">
+    <div class="small-11 columns">
+        <input type="text" placeholder="Url video" data-bind="value : videoUrl">
+    </div>
+    <div class="small-1 columns">
+        <button data-bind="enabled : isValidUrl,click: getVideo" class="button postfix">Get</button>
     </div>
 </div>
 <div class="row">
-    <div class="large-12">
-        {{> videoJsPlayer}}
+    <div class="large-6 columns">
+        <div id="_playerContainer" class="video-js-responsive-container"></div>
+    </div>
+    <div class="large-6 columns">
+        <div id="_chatContainer">
+            <div class="chatHeader">
+
+            </div>
+            <div class="chatMessages"></div>
+            <div class="chatInput">
+                <input type="text"/>
+            </div>
+        </div>
     </div>
 </div>
 </template>
