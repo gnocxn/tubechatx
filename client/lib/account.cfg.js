@@ -5,13 +5,13 @@ AccountsTemplates.configure({
     forbidClientAccountCreation: false,
     overrideLoginErrors: true,
     sendVerificationEmail: false,
-    lowercaseUsername: false,
+    lowercaseUsername: true,
     focusFirstInput: true,
 
     // Appearance
     showAddRemoveServices: false,
     showForgotPasswordLink: false,
-    showLabels: true,
+    showLabels: false,
     showPlaceholders: true,
     showResendVerificationEmailLink: false,
 

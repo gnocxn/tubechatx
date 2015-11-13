@@ -38,3 +38,5 @@ useraccounts:foundation
 accounts-password
 useraccounts:flow-routing
 dburles:collection-helpers
+fortawesome:fontawesome
+matb33:collection-hooks
