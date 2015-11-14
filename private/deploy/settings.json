@@ -1,0 +1,14 @@
+{
+  "public": {
+
+  },
+  "private" : {
+    "default" : {
+      "admin" : {
+        "username" : "admin",
+        "email" : "admin@tubechat.xyz",
+        "password" : "@Binhminh@33"
+      }
+    }
+  }
+}

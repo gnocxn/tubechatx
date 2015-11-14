@@ -24,9 +24,15 @@
             <!-- Left Nav Section -->
             <ul class="right">
                 {{#if currentUser}}
-                    <li>Welcome</li>
+                    <li class="has-dropdown">
+                        <a href="#">Welcome, {{currentUser.username}}</a>
+                        <ul class="dropdown">
+                            <li><a href="#" data-bind="click : Logout">Logout</a></li>
+                        </ul>
+                    </li>
                 {{else}}
-                    <li class="{{isActiveRoute 'signUp'}}"><a href="{{pathFor 'signUp'}}">Sign Up / Login</a></li>
+                    <li class="{{isActiveRoute 'signIn'}}"><a href="{{pathFor 'signIn'}}">Login</a></li>
+                    <li class="{{isActiveRoute 'signUp'}}"><a href="{{pathFor 'signUp'}}">Register</a></li>
                 {{/if}}
             </ul>
         </section>
