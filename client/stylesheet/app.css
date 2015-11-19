@@ -67,19 +67,24 @@
     /*margin: 0 auto*/
 }
 
-#_chatContainer{
-    height: 360px !important;
+#panel_chatBox{
+    min-height: 390px !important;
+    height: 390px;
 }
 
-#_chatContainer .chatHeader{
+#chatContainer .chatHeader{
     height: 23px !important;
 }
 
-#_chatContainer .chatMessages{
+#chatContainer .chatMessages{
     height: 300px !important;
     background-color: #eeeeee;
 }
 
-#_chatContainer .chatInput{
+#chatContainer .chatInput{
     height: 37px !important;
+}
+
+.tab-title a{
+    padding: 8px 16px !important;
 }
