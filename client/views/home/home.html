@@ -1,10 +1,10 @@
 <template name="home">
 <div class="row collapse">
     <div class="small-11 columns">
-        <input type="text" placeholder="Url video" data-bind="value : videoUrl">
+        <input type="text" placeholder="Url video" {{b "value : videoUrl"}}>
     </div>
     <div class="small-1 columns">
-        <button data-bind="enabled : isValidUrl,click: getVideo" class="button postfix">Get</button>
+        <button {{b "enabled : isValidUrl,click: getVideo"}} class="button postfix">Get</button>
     </div>
 </div>
 <div class="row">
