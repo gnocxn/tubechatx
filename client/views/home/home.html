@@ -1,27 +1,10 @@
 <template name="home">
 <div class="row collapse">
-    <div class="small-11 columns">
-        <input type="text" placeholder="Url video" {{b "value : videoUrl"}}>
-    </div>
-    <div class="small-1 columns">
-        <button {{b "enabled : isValidUrl,click: getVideo"}} class="button postfix">Get</button>
-    </div>
+
 </div>
 <div class="row">
     <div class="large-6 columns">
-        <ul class="tabs" data-tab>
-            <li class="tab-title active"><a href="#panel_Player">Player</a></li>
-            <li class="tab-title"><a href="#panel_Playlist">Playlist</a></li>
-        </ul>
-        <div class="tabs-content">
-            <div class="content active" id="panel_Player">
-                <div id="_playerContainer" class="video-js-responsive-container"></div>
-            </div>
-            <div class="content" id="panel_Playlist">
-                <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-            </div>
-        </div>
-
+        {{> playerContainer}}
     </div>
     <div class="large-6 columns">
         {{> chatContainer}}

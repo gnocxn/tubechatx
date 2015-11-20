@@ -1,0 +1,30 @@
+<template name="playerContainer">
+    <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#panel_Player">Player</a></li>
+        <li class="tab-title"><a href="#panel_Playlist">Playlist</a></li>
+    </ul>
+    <div class="tabs-content">
+        <div class="content active" id="panel_Player">
+            <div id="_playerContainer" class="video-js-responsive-container"></div>
+        </div>
+        <div class="content" id="panel_Playlist">
+            <div class="row">
+                <div class="medium-12 columns">
+                    <div class="row collapse">
+                        <div class="medium-11 columns">
+                            <input type="text" placeholder="Url video" {{b "value : videoUrl"}}>
+                        </div>
+                        <div class="medium-1 columns">
+                            <button {{b "enabled : isValidUrl,click: getVideo"}} class="button postfix">Get</button>
+                        </div>
+                    </div>
+                    <div class="row collapse">
+                        <div class="medium-12 columns">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

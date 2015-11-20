@@ -12,5 +12,7 @@ if(Meteor.isServer){
 
             console.log('admin Id', adminId);
         }
-    })
+    });
+
+
 }
