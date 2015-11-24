@@ -30,8 +30,8 @@ ecmascript-runtime@0.2.6
 ejson@1.0.7
 email@1.0.8
 es5-shim@4.1.14
-ewall:foundation@5.5.3
 fastclick@1.0.7
+flemay:less-autoprefixer@1.2.0
 fortawesome:fontawesome@4.4.0
 froatsnook:request@2.64.0
 geojson-utils@1.0.4
@@ -52,8 +52,8 @@ livedata@1.0.15
 localstorage@1.0.5
 logging@1.0.8
 manuel:reactivearray@1.0.5
-manuel:viewmodel@2.1.0
-manuel:viewmodel-debug@2.1.0
+manuel:viewmodel@2.1.1
+manuel:viewmodel-debug@2.1.1
 matb33:collection-hooks@0.8.1
 meteor@1.1.10
 meteor-base@1.0.1
@@ -78,6 +78,8 @@ reactive-var@1.0.6
 reload@1.1.4
 retry@1.0.4
 routepolicy@1.0.6
+semantic:ui@2.1.6
+semantic:ui-data@2.1.6
 service-configuration@1.0.5
 session@1.1.1
 sha@1.0.4
@@ -94,7 +96,7 @@ underscore@1.0.4
 url@1.0.5
 useraccounts:core@1.12.4
 useraccounts:flow-routing@1.12.4
-useraccounts:foundation@1.12.4
+useraccounts:semantic-ui@1.12.4
 webapp@1.2.3
 webapp-hashing@1.0.5
 zimme:active-route@2.3.2
