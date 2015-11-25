@@ -25,6 +25,7 @@ ddp-rate-limiter@1.0.0
 ddp-server@1.2.2
 deps@1.0.9
 diff-sequence@1.0.1
+digilord:faker@1.0.7
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
@@ -34,6 +35,7 @@ fastclick@1.0.7
 flemay:less-autoprefixer@1.2.0
 fortawesome:fontawesome@4.4.0
 froatsnook:request@2.64.0
+gadicohen:headers@0.0.31
 geojson-utils@1.0.4
 gnocxn:9xbuddy@0.0.1
 gnocxn:clappr@0.0.1
@@ -58,6 +60,7 @@ matb33:collection-hooks@0.8.1
 meteor@1.1.10
 meteor-base@1.0.1
 meteorhacks:async@1.0.0
+meteorhacks:inject-initial@1.0.3
 meteorhacks:npm@1.5.0
 minifiers@1.1.7
 minimongo@1.0.10
@@ -70,6 +73,7 @@ npm-container@1.2.0
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4
+ostrio:cookies@2.0.1
 promise@0.5.1
 random@1.0.5
 rate-limit@1.0.0

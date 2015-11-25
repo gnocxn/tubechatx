@@ -1,14 +1,11 @@
 Template.defaultNav.viewmodel({
     Logout : function(e){
-        console.log(e);
+        e.preventDefault();
+        AccountsTemplates.logout();
     }
 });
 
-Template.defaultNav.rendered = function(){
-    $(document).ready(function(){
-        $('.ui.dropdown').dropdown();
-    })
-}
+
 
 /*
 Template.defaultNav.events({
