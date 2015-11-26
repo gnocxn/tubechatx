@@ -63,7 +63,7 @@ AccountsTemplates.addFields([
     pwd
 ]);
 var logoutHook = function(){
-    Router.go('/');
+    FlowRouter.go('/');
 }
 
 AccountsTemplates.configure({

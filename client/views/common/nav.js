@@ -1,11 +1,22 @@
-Template.defaultNav.viewmodel({
-    Logout : function(e){
+Template.defaultNav.events({
+    'click a.btnLogout' : function(e){
         e.preventDefault();
-        AccountsTemplates.logout();
+        if(Meteor.userId()){
+            AccountsTemplates.logout();
+        }
+    },
+    'click a.btnNewRoom' : function(e){
+        e.preventDefault();
+        var roomId = 'GU-' + Random.id();
+        if(cookies.has('roomId')){
+            roomId = cookies.get('roomId');
+        }else{
+            cookies.set('roomId', roomId);
+        }
+        var pathOfRoom = FlowRouter.path('roomDetail',{roomId : roomId});
+        FlowRouter.go(pathOfRoom);
     }
 });
-
-
 
 /*
 Template.defaultNav.events({

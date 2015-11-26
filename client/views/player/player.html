@@ -1,11 +1,24 @@
-<template name="playerContainer">
-    <ul class="tabs" data-tab>
-        <li class="tab-title active"><a href="#panel_Player">Player</a></li>
-        <li class="tab-title"><a href="#panel_Playlist">Playlist</a></li>
-    </ul>
-    <div class="tabs-content">
+<template name="widget_Player">
+    <div class="ui tabular menu playerContainerTab">
+        <div class="active item" data-tab="tab-Player">Player</div>
+        <div class="item" data-tab="tab-Playlist">Playlist</div>
+    </div>
+    <div class="ui tab" data-tab="tab-Player">
+        <div id="_playerContainer" class="video-js-responsive-container"></div>
+    </div>
+    <div class="ui tab" data-tab="tab-Playlist">
+        <div class="ui grid">
+            <div class="wide column">
+                <div class="ui fluid action input">
+                    <input type="text" placeholder="Url Video..." {{b "value : videoUrl"}}>
+                    <div class="ui button" {{b "enabled : isValidUrl,click: getVideo"}}>Get</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="tabs-content">
         <div class="content active" id="panel_Player">
-            <div id="_playerContainer" class="video-js-responsive-container"></div>
+
         </div>
         <div class="content" id="panel_Playlist">
             <div class="row">
@@ -26,5 +39,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 </template>
